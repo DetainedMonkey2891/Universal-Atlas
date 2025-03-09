@@ -7,7 +7,7 @@
     notify = true,
     sexpart = "Head",
     keybind = Enum.KeyCode.C,
-    prediction = 0.144,
+    prediction = 0.03842,
     smoothness = 0.6
 }--]]
 
