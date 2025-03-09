@@ -1,5 +1,6 @@
 --// THIS IS OPEN SRC IS U CLAIM THIS LOOOOL 
 --// SUMMON UR A NIGGER
+--// LAST UPDATED: 4:24AM 08/03/25 NIGGERS
 
 --[[getgenv().suckmemommy = {
     enabled = true,
@@ -12,9 +13,9 @@
 
 local sexy = {
     targetplayer = nil,
-    sexyplayersnigger = game:GetService("Players"),
-    camerablowjobs = workspace.CurrentCamera,
-    userinputsexy = game:GetService("UserInputService"),
+    playersssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss = game:GetService("Players"),
+    cameraaaaaaaaaaaaaaaaaaaaaaaaaablowjobssssssssssssssssssssssssssAAAAAAAA = workspace.CurrentCamera,
+    thisfuckingshitisgrosesssssssssssssssssssss = game:GetService("UserInputService"),
 }
 
 local function Notify(message)
@@ -25,21 +26,25 @@ local function Notify(message)
     })
 end
 
+if not sexyloaded then 
+    getgenv().sexyloaded = true 
+    Notify("sexy settings loaded")
+end
+
 local function analmepleaseimacumslut()
     local closestDist = math.huge
     local closestPlr = nil
     local closestPart = nil
     
-    local mousePos = sexy.userinputsexy:GetMouseLocation()
-    local sexynigger = sexy.sexyplayersnigger.LocalPlayer
+    local mousePos = sexy.thisfuckingshitisgrosesssssssssssssssssssss:GetMouseLocation()
+    local sexynigger = sexy.playersssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss.LocalPlayer
 
-    for _, player in ipairs(sexy.sexyplayersnigger:GetPlayers()) do
+    for _, player in ipairs(sexy.playersssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss:GetPlayers()) do
         if player ~= sexynigger and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
             local sigmapart = player.Character.HumanoidRootPart
-            local screenPos, onScreen = sexy.camerablowjobs:WorldToViewportPoint(sigmapart.Position)
+            local screenPos, onScreen = sexy.cameraaaaaaaaaaaaaaaaaaaaaaaaaablowjobssssssssssssssssssssssssssAAAAAAAA:WorldToViewportPoint(sigmapart.Position)
                             
-
-            local AimPart = getgenv().suckmemommy.sexpart
+            local AimPart = suckmemommy.sexpart
             local Part = player.Character:FindFirstChild(AimPart)
 
             if onScreen then
@@ -62,6 +67,7 @@ task.spawn(function()
             local sex = sexy.targetplayer.Character
             local aimbotSettings = getgenv().suckmemommy
             local otherhumanoidsex = sexy.targetplayer.Character:FindFirstChild("HumanoidRootPart")
+
         
             if otherhumanoidsex and aimbotSettings.enabled then
                 local aimPosition = sex:FindFirstChild(aimbotSettings.sexpart) and sex[aimbotSettings.sexpart].Position
@@ -69,21 +75,26 @@ task.spawn(function()
                 local predictedPosition = aimPosition and (aimPosition + (velocity * aimbotSettings.prediction))
 
                 if aimPosition and predictedPosition then
-                    local mainCFrame = CFrame.new(sexy.camerablowjobs.CFrame.Position, predictedPosition)
-                    sexy.camerablowjobs.CFrame = sexy.camerablowjobs.CFrame:Lerp(mainCFrame, aimbotSettings.smoothness, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut)
+                    local mainCFrame = CFrame.new(sexy.cameraaaaaaaaaaaaaaaaaaaaaaaaaablowjobssssssssssssssssssssssssssAAAAAAAA.CFrame.Position, predictedPosition)
+                    sexy.cameraaaaaaaaaaaaaaaaaaaaaaaaaablowjobssssssssssssssssssssssssssAAAAAAAA.CFrame = sexy.cameraaaaaaaaaaaaaaaaaaaaaaaaaablowjobssssssssssssssssssssssssssAAAAAAAA.CFrame:Lerp(mainCFrame, aimbotSettings.smoothness, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut)
                 end
             end
         end
     end
 end)
 
-sexy.userinputsexy.InputBegan:Connect(function(input, gameProcessed)
+sexy.thisfuckingshitisgrosesssssssssssssssssssss.InputBegan:Connect(function(input, gameProcessed)
     if not gameProcessed and input.KeyCode == suckmemommy.keybind then
         suckmemommy.enabled = not suckmemommy.enabled
         if suckmemommy.enabled then
-            sexy.targetplayer, _ = analmepleaseimacumslut()
-            if suckmemommy.notify then 
-                Notify("Cummed On: ".. sexy.targetplayer.DisplayName)
+            local target, _ = analmepleaseimacumslut()
+            if target then
+                sexy.targetplayer = target
+                if suckmemommy.notify then 
+                    Notify("Cummed On: " .. target.DisplayName)
+                end
+            else
+                suckmemommy.enabled = false
             end
         else 
             sexy.targetplayer = nil
